@@ -10,10 +10,12 @@ The code is in two XCode 4.5 projects.
 
 ## NSPredicatesTalk
 
-	This is the code for most of the examples.  It is a command line application and all of the important stuff is in the tests.
+This is the code for most of the examples.  It is a command line application 
+and all of the important stuff is in the tests.
 
 
 ## NSPredicatesTalkCoreData
 
-	This is ONLY the code for the core data part of the talk.  Most of the good stuff is in the tests and the model.
+This is ONLY the code for the core data part of the talk.  Most of the 
+good stuff is in the tests and the model.
 
