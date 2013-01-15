@@ -1,0 +1,1 @@
+Link to [slides](http://www.slideshare.net/carologic/users-are-losers-theyll-like-whatever-we-make-and-other-fallacies) posted from the #CodeMash Twitter feed by [@carologic](http://twitter.com/@carologic)
