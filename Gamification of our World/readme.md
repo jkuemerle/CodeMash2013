@@ -1,0 +1,1 @@
+Link to [slides](https://skydrive.live.com/view.aspx?resid=94EE1D8B873177EC!48636&app=PowerPoint&authkey=!ABMzB6KwnpWmZxE) posted from the #CodeMash Twitter feed by [@brianhprince](http://twitter.com/@brianhprince)
