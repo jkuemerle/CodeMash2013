@@ -1,0 +1,1 @@
+Link to [slides](http://www.slideshare.net/LeanDog/servant-leadership-with-moral-authority-leandog-by-jon-r-stahl) posted from the #CodeMash Twitter feed by [@jonrstahl](http://twitter.com/@jonrstahl)
