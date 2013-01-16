@@ -1,3 +1,12 @@
 [submodule "Better Testing with Given-When-Then"]
 	path = Better Testing with Given-When-Then
 	url = git://github.com/jimweirich/presentation-given.git
+[submodule "Building External DSLs for Fun and Profit"]
+	path = Building External DSLs for Fun and Profit
+	url = git://github.com/jbogard/presentations.git
+[submodule "Functional Testing with ASP.NET MVC"]
+	path = Functional Testing with ASP.NET MVC
+	url = git://github.com/jbogard/presentations.git
+[submodule "Vital Testing"]
+	path = Vital Testing
+	url = git://github.com/jbogard/presentations.git
