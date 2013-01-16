@@ -1,0 +1,1 @@
+Link to [blog post](http://blog.jessitron.com/2013/01/geeks-freaks-nerds-programmers.html) referenced in the Pecha Kucha posted from the #CodeMash Twitter feed by [@jessitron](http://twitter.com/@jessitron)
