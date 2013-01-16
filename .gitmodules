@@ -1,3 +1,3 @@
 [submodule "Better Testing with Given-When-Then"]
 	path = Better Testing with Given-When-Then
-	url = https://github.com/jimweirich/presentation-given.git
+	url = git://github.com/jimweirich/presentation-given.git
