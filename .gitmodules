@@ -10,3 +10,6 @@
 [submodule "Vital Testing"]
 	path = Vital Testing
 	url = git://github.com/jbogard/presentations.git
+[submodule "Building, Deploying, and Scaling MongoDB"]
+	path = Building, Deploying, and Scaling MongoDB
+	url = git://github.com/sridharn/codemash_2013.git
