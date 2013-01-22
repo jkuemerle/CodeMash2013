@@ -13,3 +13,6 @@
 [submodule "Building, Deploying, and Scaling MongoDB"]
 	path = Building, Deploying, and Scaling MongoDB
 	url = git://github.com/sridharn/codemash_2013.git
+[submodule "How to Build a Cloud App in an Afternoon with Parse"]
+	path = How to Build a Cloud App in an Afternoon with Parse
+	url = git://github.com/willdages/CodeMashQuotes-Demo.git
