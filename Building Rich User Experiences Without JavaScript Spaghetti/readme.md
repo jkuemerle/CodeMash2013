@@ -1,0 +1,1 @@
+[Slides](http://www.slideshare.net/jaredthenerd/javascript-spaghetti-codemash-111) and [examples](https://github.com/jaredfaris/codepalousa2012demo) for the Building Rich User Experiences Without JavaScript Spaghetti presentation by [Jared Faris (@jaredthenerd)](http://twitter.com/jaredthenerd)
