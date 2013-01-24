@@ -16,3 +16,6 @@
 [submodule "How to Build a Cloud App in an Afternoon with Parse"]
 	path = How to Build a Cloud App in an Afternoon with Parse
 	url = git://github.com/willdages/CodeMashQuotes-Demo.git
+[submodule "Full Stack Integration Testing with Node.js"]
+	path = Full Stack Integration Testing with Node.js
+	url = git://github.com/theycallmeswift/full-stack-testing-with-node.git
