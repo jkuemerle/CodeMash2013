@@ -19,3 +19,6 @@
 [submodule "Full Stack Integration Testing with Node.js"]
 	path = Full Stack Integration Testing with Node.js
 	url = git://github.com/theycallmeswift/full-stack-testing-with-node.git
+[submodule "Using Images in iOS/Code"]
+	path = Using Images in iOS/Code
+	url = git://github.com/SlaunchaMan/iOS-image-examples.git
