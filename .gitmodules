@@ -22,3 +22,6 @@
 [submodule "Using Images in iOS/Code"]
 	path = Using Images in iOS/Code
 	url = git://github.com/SlaunchaMan/iOS-image-examples.git
+[submodule "Developing Mobile applications with PhoneGap"]
+	path = Developing Mobile applications with PhoneGap
+	url = git://github.com/cfjedimaster/DevelopingMobileAppsWithPhoneGap.git
