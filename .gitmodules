@@ -25,3 +25,6 @@
 [submodule "Developing Mobile applications with PhoneGap"]
 	path = Developing Mobile applications with PhoneGap
 	url = git://github.com/cfjedimaster/DevelopingMobileAppsWithPhoneGap.git
+[submodule "Real-world JavaScript Testing"]
+	path = Real-world JavaScript Testing
+	url = git://github.com/searls/codemash-jasmine-precompiler.git
