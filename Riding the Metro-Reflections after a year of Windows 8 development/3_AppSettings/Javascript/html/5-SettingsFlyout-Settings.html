@@ -1,0 +1,90 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>App settings flyout</title>
+    </head>
+    <body>
+        <!-- BEGINSETTINGSFLYOUT -->
+        <div id="settingsDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="App Settings Flyout" data-win-options="{width:'wide'}">
+            <div class="win-header" style="background-color:#dbf9ff">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">Settings SDK sample settings</div>
+                <img src="../images/smallTile-sdk.png" style="position: absolute; right: 40px;"/>
+            </div>
+            <div class="win-content">
+                <h3>Basic controls for settings</h3>
+                <div>The following controls are a good starting list of controls to build your settings UI.</div>
+                <div>
+                    <br />
+                    <h3>Toggle switch</h3>
+                    <div>Use toggle switches to let users set Boolean values.</div>
+                    <br />
+                    <div id="Toggle1" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title:'Download updates automatically',checked:true}">
+                    </div>
+                    <div id="Toggle2" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title:'Install updates automatically'}">
+                    </div>
+                </div>
+                <div>
+                    <br />
+                    <h3>Push button</h3>
+                    <div>With a push button, users initiate an immediate action.</div>
+                    <button type="button" onclick="WinJS.log && WinJS.log('Clear history button pressed', 'App settings SDK sample', 'info')">Clear History</button>
+                </div>
+                <div>
+                    <br />
+                    <h3>Select control</h3>
+                    <div>Use the select to allow users to select one item from a set of text only items.</div>
+                    <div>State</div>
+                    <select aria-label="State select control">
+                        <option value="AK">Alaska</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="KS">Kansas</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OR">Oregon</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="WA" selected>Washington</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                    </div>
+                <div>
+                    <br />
+                    <h3>Hyperlink</h3>
+                    <div>Use a hyperlink when the associated action will take the user out of this flyout.</div>
+                    <div><a href="http://go.microsoft.com/fwlink/?LinkID=190175" target="fix_link_too">View privacy statement on our website</a></div>
+                </div>
+                <div>
+                    <br />
+                    <h3>Text input box</h3>
+                    <div>Use a text input box to allow users to enter text. Set the type of the text input box to according to the type of text you’re capturing from the user (e.g. email or password).</div>
+                    <br />
+                    <div>Email account</div>
+                    <input type="text" aria-label="Enter email account" />
+                    <button type="button" onclick="WinJS.log && WinJS.log('Add email account button pressed', 'App settings SDK sample', 'info')">Add</button>
+                </div>
+                <div>
+                    <br />
+                    <h3>Radio button group</h3>
+                    <div>Lets users choose one item from a small set of mutually exclusive, related options.</div>
+                    <br />
+                    <div>Video quality</div>
+                    <label><input type="radio" name="video" value="High" checked />High</label>
+                    <br />
+                    <label><input type="radio" name="video" value="Medium" />Medium</label>
+                    <br />
+                    <label><input type="radio" name="video" value="Low" />Low</label>
+                </div>
+
+            </div>
+        </div>
+        <!-- ENDSETTINGSFLYOUT -->
+    </body>
+</html>

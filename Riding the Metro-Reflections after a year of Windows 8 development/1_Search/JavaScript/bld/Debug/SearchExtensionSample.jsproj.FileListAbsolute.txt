@@ -1,0 +1,13 @@
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bin\Debug\resources.pri
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bin\Debug\AppxManifest.xml
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bin\Debug\SearchExtensionSample.build.appxrecipe
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\priconfig.xml.intermediate
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\layout.resfiles.intermediate
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\resources.resfiles.intermediate
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\pri.resfiles.intermediate
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\priconfig.xml
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\layout.resfiles
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\resources.resfiles
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\pri.resfiles
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\LanguageQualifiers.txt
+W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bld\Debug\ProjectArchitectures.txt

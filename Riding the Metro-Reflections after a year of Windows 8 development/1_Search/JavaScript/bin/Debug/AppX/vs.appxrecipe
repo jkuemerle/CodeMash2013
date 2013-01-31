@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BARD</Machine>
+    <WindowsUser>Bill</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>BE838AEE22F3F889E08CC67207885CC3D80A82CDF13996591A82EBDD9399B9AA</RegisteredManifestChecksum>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-08-19T02:50:54.241</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\base-sdk.js">
+      <PackagePath>base-sdk.js</PackagePath>
+      <Modified>2012-08-19T02:50:45.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\program.js">
+      <PackagePath>program.js</PackagePath>
+      <Modified>2012-06-19T02:34:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2012-08-19T02:50:51.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\images\placeholder-sdk.png">
+      <PackagePath>images\placeholder-sdk.png</PackagePath>
+      <Modified>2012-06-19T02:34:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\images\windows-sdk.png">
+      <PackagePath>images\windows-sdk.png</PackagePath>
+      <Modified>2012-08-19T02:38:26.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\images\microsoft-sdk.png">
+      <PackagePath>images\microsoft-sdk.png</PackagePath>
+      <Modified>2012-08-19T02:38:21.063</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\images\tile-sdk.png">
+      <PackagePath>images\tile-sdk.png</PackagePath>
+      <Modified>2012-08-19T02:38:26.437</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\images\smallTile-sdk.png">
+      <PackagePath>images\smallTile-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-08-19T02:38:24.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\images\splash-sdk.png">
+      <PackagePath>images\splash-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-06-19T02:34:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\images\squareTile-sdk.png">
+      <PackagePath>images\squareTile-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-08-19T02:38:24.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\images\storeLogo-sdk.png">
+      <PackagePath>images\storeLogo-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-08-19T02:38:25.479</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\Images\SDK_ResultSuggestionImage.scale-100.png">
+      <PackagePath>Images\SDK_ResultSuggestionImage.scale-100.png</PackagePath>
+      <Modified>2012-08-19T02:38:23.246</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\Images\SDK_ResultSuggestionImage.scale-140.png">
+      <PackagePath>Images\SDK_ResultSuggestionImage.scale-140.png</PackagePath>
+      <Modified>2012-08-19T02:38:23.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\Images\SDK_ResultSuggestionImage.scale-180.png">
+      <PackagePath>Images\SDK_ResultSuggestionImage.scale-180.png</PackagePath>
+      <Modified>2012-08-19T02:38:23.902</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\jsonSuggestionService\exampleJsonResponse.json">
+      <PackagePath>jsonSuggestionService\exampleJsonResponse.json</PackagePath>
+      <Modified>2012-08-19T02:38:28.307</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\css\base-sdk.css">
+      <PackagePath>css\base-sdk.css</PackagePath>
+      <Modified>2012-08-19T02:38:20.120</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\css\program.css">
+      <PackagePath>css\program.css</PackagePath>
+      <Modified>2012-08-19T02:38:20.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\xmlSuggestionService\exampleXmlResponse.xml">
+      <PackagePath>xmlSuggestionService\exampleXmlResponse.xml</PackagePath>
+      <Modified>2012-08-19T02:38:29.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\sempf\Presentations\Windows 8 Metro\06 - Contracts\Demos\1_Search\JavaScript\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-08-19T02:50:53.181</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.8514.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.8514.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

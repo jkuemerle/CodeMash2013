@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="Microsoft.SDKSamples.ShareTargetSample" Version="1.0.0.4" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  <Properties>
+    <DisplayName>Share Target Sample App</DisplayName>
+    <Description>Share Target Sample App</Description>
+    <PublisherDisplayName>Microsoft</PublisherDisplayName>
+    <Logo>images\storeLogo-sdk.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Applications>
+    <Application Id="Microsoft.SDKSamples.ShareTargetSample" StartPage="default.html">
+      <VisualElements DisplayName="Share Target Sample App" Logo="images\squareTile-sdk.png" SmallLogo="images\smallTile-sdk.png" Description="Share Target Sample App" ForegroundText="dark" BackgroundColor="#FFFFFF">
+        <DefaultTile ShortName="Share Target" ShowName="allLogos" />
+        <SplashScreen BackgroundColor="white" Image="images\splash-sdk.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.shareTarget" StartPage="target.html">
+          <ShareTarget>
+            <SupportedFileTypes>
+              <SupportsAnyFileType />
+            </SupportedFileTypes>
+            <DataFormat>text</DataFormat>
+            <DataFormat>uri</DataFormat>
+            <DataFormat>bitmap</DataFormat>
+            <DataFormat>html</DataFormat>
+            <DataFormat>Windows-8-Preview-Book</DataFormat>
+          </ShareTarget>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

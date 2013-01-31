@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="Microsoft.SDKSamples.SearchExtensionSample.JS" Version="1.0.0.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  <Properties>
+    <DisplayName>SearchExtension SDK Sample</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Description>SearchExtension SDK Sample</Description>
+    <Logo>images\storeLogo-sdk.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Capabilities>
+    <Capability Name="picturesLibrary" />
+    <Capability Name="musicLibrary" />
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Applications>
+    <Application Id="SearchExtensionSample" StartPage="default.html">
+      <VisualElements DisplayName="SearchExtensionSample - DEMO" Logo="images\squareTile-sdk.png" SmallLogo="images\smallTile-sdk.png" Description="SDK Sample" ForegroundText="dark" BackgroundColor="#FFFFFF" ToastCapable="false">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen BackgroundColor="white" Image="images\splash-sdk.png" />
+      </VisualElements>
+      <!--TODO: 1 - File New Project - searchResults.html, also adds extension for search. -->
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>
