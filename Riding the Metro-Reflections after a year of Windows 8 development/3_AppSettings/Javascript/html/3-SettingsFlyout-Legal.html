@@ -1,0 +1,24 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>Legal notices settings flyout</title>
+    </head>
+    <body>
+        <!-- BEGINSETTINGSFLYOUT -->
+        <div id="legalNoticesDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="Legal notices settings flyout" data-win-options="{width:'wide'}">
+            <div class="win-header" style="background-color:#dbf9ff">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">Legal notices</div>
+                <img src="../images/smallTile-sdk.png" style="position: absolute; right: 40px;"/>
+            </div>
+            <div class="win-content">
+                    <h3>iFrame support</h3>
+                    <div>Use an iFrame to expose dynamic content from a web server, for example to expose online help that stays current.</div>
+                    <div id="onlineHelp" style="background-color:#c8f7f7"> 
+                    <iframe src="http://msdn.microsoft.com/en-us/library/windows/apps/hh464920(v=VS.85).aspx" width="566" height="600"/>
+                    </div>
+            </div>
+        </div>
+        <!-- ENDSETTINGSFLYOUT -->
+    </body>
+</html>

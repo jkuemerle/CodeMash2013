@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Share Source Sample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-light.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script type="text/javascript" src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+
+    <!-- SDK Base references -->
+    <link rel="stylesheet" type="text/css" href="css/base-sdk.css" />
+    <script type="text/javascript" src="base-sdk.js"></script>
+
+    <!-- Sample references -->
+    <link rel="stylesheet" type="text/css" href="css/program.css" />
+    <script type="text/javascript" src="program.js"></script>
+</head>
+<body role="application">
+    <div id="rootGrid">
+        <div id="header" role="contentinfo">
+        </div>
+        <div id="content">
+            <h1 id="featureLabel">
+                Share Source Sample</h1>
+            <h2 id="inputLabel">
+                Input</h2>
+            <div id="input" role="main" aria-labelledby="inputLabel">
+                <div class="options">
+                    <h3 id="listLabel">
+                        Select scenario:</h3>
+                    <select size="8" id="scenarios" aria-labelledby="listLabel">
+                        <option selected="selected" value="1">1) Share text</option>
+                        <option value="2">2) Share a link</option>
+                        <option value="3">3) Share an image</option>
+                        <option value="4">4) Share files</option>
+                        <option value="5">5) Share delay rendered files</option>
+                        <option value="6">6) Share HTML content</option>
+                        <option value="7">7) Share custom data</option>
+                        <option value="8">8) Fail with display text</option>
+                    </select>
+                </div>
+                <div class="details" role="region" aria-labelledby="descLabel" aria-live="assertive">
+                    <h3 id="descLabel">
+                        Set Data Package to share</h3>
+                    <!-- Scenario 1 Input -->
+                    <div class="item" id="scenario1Input">
+                        <p>Metadata: Enter a title for what you're sharing</p>
+                        <input size="100" id="titleInputBox1" value="What are Metro Style Apps?" />
+                        <p>Metadata: Enter a description for what you're sharing</p>
+                        <input size="100" id="descriptionInputBox1" value="Selected text from the Share Source sample" />
+                        <p>Data Package text: Enter the actual text you would like to share</p>
+                        <input size="100" id="textInputBox" value="Metro style apps are full screen apps tailored to your users' needs, tailored to the device they run on, tailored for touch interaction, and tailored to the Windows user interface. Windows helps you interact with your users, and your users interact with your app." />
+                        <br />
+                        <br />
+                        <p>
+                            Next, set it for sharing</p>
+                        <button class="action" id="scenario1SetButton">
+                            Set</button>
+                    </div>
+                    <!-- Scenario 2 Input -->
+                    <div class="item" id="scenario2Input">
+                        <p>Metadata: Enter a title for what you're sharing</p>
+                        <input size="100" id="titleInputBox2" value="Building Windows 8" />
+                        <p>Metadata: Enter a description for what you're sharing</p>
+                        <input size="100" id="descriptionInputBox2" value="An inside look from the Windows engineering team" />
+                        <p>
+                            Enter the link you would like to share</p>
+                        <input size="100" id="linkInputBox" value="http://blogs.msdn.com/b/b8/" />
+                        <br />
+                        <br />
+                        <p>
+                            Next, set it for sharing</p>
+                        <button class="action" id="scenario2SetButton">
+                            Set</button>
+                    </div>
+                    <!-- Scenario 3 Input -->
+                    <div class="item" id="scenario3Input">
+                        <p>Metadata: Enter a title for what you're sharing</p>
+                        <input size="100" id="titleInputBox3" value="My image" />
+                        <p>Metadata: Enter a description for what you're sharing</p>
+                        <input size="100" id="descriptionInputBox3" value="Selected image from the Share Source sample" />
+                        <p>
+                            Select the image you would like to share</p>
+                        <button class="action" id="scenario3ChooseImageButton">Select image</button>
+                        <br />
+                        <br />
+                        <img class="imageHolder" id="scenario3ImageHolder" alt="image holder" src="images/placeholder-sdk.png" />
+                        <br />
+                        <br />
+                        <p>
+                            Next, set it for sharing</p>
+                        <button class="action" id="scenario3SetButton">
+                            Set</button>
+                    </div>
+                    <!-- Scenario 4 Input -->
+                    <div class="item" id="scenario4Input">
+                        <p>Metadata: Enter a title for what you're sharing</p>
+                        <input size="100" id="titleInputBox4" value="My files" />
+                        <p>Metadata: Enter a description for what you're sharing</p>
+                        <input size="100" id="descriptionInputBox4" value="Selected files from the Share Source sample" />
+
+                        <p>
+                            Select files you would like to share</p>
+                        <p id="selectedFiles">
+                            No files selected.</p>
+                        <button class="action" id="scenario4ChooseFilesButton">
+                            Select files</button>
+                        <br />
+                        <br />
+                        <p>
+                            Next, set the files for sharing</p>
+                        <button class="action" id="scenario4SetButton">
+                            Set</button>
+                    </div>
+                    <!-- Scenario 5 Input -->
+                    <div class="item" id="scenario5Input">
+                        <p>Sometimes you may want provide content in a different format or size for sharing.
+                            However, you may not want to do the work to prepare content for sharing until the target app actually requests it. In such cases, you should use delayed rendering.</p>
+                        <p>
+                           To demonstrate, please choose an image to be shared. When data is requested by the target app, the image will be resized by the source app. Since image manipulation may take 
+                            some time, the image processing is deferred until it's requested by the target app.
+                        </p>
+                        <button class="action" id="scenario5ChooseImageButton">Select image</button>
+                        <br />
+                        <br />
+                        <img class="imageHolder" id="scenario5ImageHolder" alt="image holder" src="images/placeholder-sdk.png" />
+                            
+                        <br />
+                        <br />
+                        <p>
+                            Next, set the files for sharing</p>
+                        <button class="action" id="scenario5SetButton">
+                            Set</button>
+                    </div>
+                    <!-- Scenario 6 Input -->
+                    <div class="item" id="scenario6Input">
+                        <p> You can share content in HTML markup format and preserve images.
+                        </p>
+                        <p>Metadata: Enter a title for what you're sharing</p>
+                        <input size="100" id="titleInputBox6" value="A web snippet for you" />
+                        <p>Metadata: Enter a description for what you're sharing</p>
+                        <input size="100" id="descriptionInputBox6" value="HTML content with image" />
+                        
+                        <p>Content: The following is an HTML fragment containing a locally-referenced image.</p>
+                        <div id="htmlFragment" style="width: 480px;background-color:#f2f2f2;padding: 1px 15px 20px 15px;margin-bottom:40px; font-family:'Segoe UI Semilight'">
+                            <h2 style="margin-bottom:10px"><img id="htmlFragmentImage" src="ms-appx:///images/dev-center_branding.png" alt="Windows Dev Center" /></h2>
+                            <p style="margin-top:0">Go to the new <a href="http://msdn.microsoft.com/en-us/windows/home/">Windows Dev Center</a> to get the Windows 8 Developer Preview, dev tools, samples, forums, docs and other resources to start building on Windows 8 now.</p>
+        
+                            <a href="http://msdn.microsoft.com/en-us/windows/apps/br229516" style="padding-left:20px;"><span style="font-size:14px">Downloads</span></a> 
+                            <span style="padding:0 20px;color:#585858;font-size:14px">|</span>
+                            <a href="http://msdn.microsoft.com/library/windows/apps/br211386"><span style="font-size:14px">Getting started</span></a>
+                            <span style="padding:0 20px;color:#585858;font-size:14px">|</span>
+                            <a href="http://code.msdn.microsoft.com/en-us/windowsapps"><span style="font-size:14px">App samples</span></a>
+                            <span style="padding:0 20px;color:#585858;font-size:14px">|</span>
+                            <a href="http://social.msdn.microsoft.com/Forums/en-us/category/windowsapps"><span style="font-size:14px">Forums</span></a>
+                        </div>
+
+                        <p>Next, set the above HTML fragment for sharing</p>
+                        <button class="action" id="scenario6SetButton">
+                            Set</button>
+                    </div>
+                    <!-- Scenario 7 Input -->
+                    <div class="item" id="scenario7Input">
+                        <p> Data in custom formats can be shared with target applications that support them. In this example, we share data about a book
+                            in JSON microdata format. A supported target app, such as the Share Target sample, must be installed in order to have a place to send the data.
+                        </p>
+                        <p>Metadata: Enter a title for what you're sharing</p>
+                        <input size="100" id="titleInputBox7" value="The Catcher in the Rye" />
+                        <p>Metadata: Enter a description for what you're sharing</p>
+                        <input size="100" id="descriptionInputBox7" value="My favorite book" />
+                        <p>Custom data format name</p>
+                        <input size="100" id="dataFormatInputBox7" value="Windows-8-Preview-Book" />
+                        <p>Custom data:</p>
+<pre>
+var book = {
+    "type" : "http://schema.org/Book",
+    "properties" : 
+    {
+         "image" : "http://sourceurl.com/catcher-in-the-rye-book-cover.jpg",
+         "name" : "The Catcher in the Rye",
+         "bookFormat" : "http://schema.org/Paperback",
+         "author" : "http://sourceurl.com/author/jd_salinger.html",
+         "numberOfPages" : 224,
+         "publisher" : "Little, Brown, and Company",
+         "datePublished" : "1991-05-01",
+         "inLanguage" : "English",
+         "isbn" : "0316769487"
+    };
+};
+</pre>
+                        <p>Next, set the custom data for sharing</p>
+                        <button class="action" id="scenario7SetButton">
+                            Set</button>
+                    </div>
+                    
+                     <!-- Scenario 8 Input -->
+                    <div class="item" id="scenario8Input">
+                        <p>If the user tries to share when your app is not able to support share, you can provide a failure message that 
+                            will be displayed in the share pane.  This message should help the user understand why they cannot share and 
+                            what they need to do to complete their task.  You do not need to use this message if your app never supports share. 
+                            Windows provides a default message for that case.
+                        </p>
+                        <p>Choose the failure display text</p>
+                        <input size="100" id="displayTextInputBox" value="You have selected too many images.  Select less than 50 images and then try again." />
+                        <p>
+                            Next, set the failure display text</p>
+                        <button class="action" id="scenario8SetButton">
+                            Set</button>
+                    </div>
+                </div>
+            </div>
+            <h2 id="outputLabel">
+                Output</h2>
+            <div id="output" role="region" aria-labelledby="outputLabel" aria-live="assertive">
+                <div id="statusMessage">
+                </div>
+                <div id="scenario1Output">
+                </div>
+                <div id="scenario2Output">
+                </div>
+                <div id="scenario3Output">
+                </div>
+                <div id="scenario4Output">
+                </div>
+                <div id="scenario5Output">
+                </div>
+                <div id="scenario6Output">
+                </div>
+                <div id="scenario7Output">
+                </div>
+                <div id="scenario8Output">
+                </div>
+                <div id="shareStep" class='hidden'>
+                    <p>
+                        Now, bring up the charms bar and choose share. <br /><br />
+                        You can also invoke the share window programmatically after prompting the user in response to an event 
+                        (e.g. "You just beat the high score. Do you want to share this with your friends?")
+                    </p>
+                    <button id="shareButton">
+                        Yes, share with friends</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+        </div>
+    </div>
+</body>
+</html>

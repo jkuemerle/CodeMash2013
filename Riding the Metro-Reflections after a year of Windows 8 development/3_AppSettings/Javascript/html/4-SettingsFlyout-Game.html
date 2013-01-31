@@ -1,0 +1,56 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>Game options settings flyout</title>
+    </head>
+    <body>
+        <!-- BEGINSETTINGSFLYOUT -->
+        <div id="gameOptionsDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="Game options settings flyout" data-win-options="{width:'narrow'}">
+            <div class="win-header" style="background-color:#dbf9ff">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">Game options</div>
+                <img src="../images/smallTile-sdk.png" style="position: absolute; right: 40px;"/>
+            </div>
+            <div class="win-content">
+                {Game options content here}
+            </div>
+        </div>
+        <!-- ENDSETTINGSFLYOUT -->
+                <script>
+                    document.body.addEventListener("DOMNodeInserted", onNodeInsertedIntoDocument, false);
+
+                    function onNodeInsertedIntoDocument() {
+                        var element = document.getElementById("gameOptionsDiv");
+
+                        if (element) {
+                            element.addEventListener("beforeshow", beforeShowHandler, false);
+                            element.addEventListener("aftershow", afterShowHandler, false);
+                            element.addEventListener("beforehide", beforeHideHandler, false);
+                            element.addEventListener("afterhide", afterHideHandler, false);
+                        }
+                    }
+
+                    function afterShowHandler(event) {
+                        // Display a status message in the SDK sample output region
+                        WinJS.log && WinJS.log("Game options settings flyout aftershow event raised.", "App settings SDK sample", "info");
+                    }
+
+                    function beforeShowHandler(event) {
+                        // Display a status message in the SDK sample output region
+                        WinJS.log && WinJS.log("Game options settings flyout beforeshow event raised.", "App settings SDK sample", "info");
+                    }
+
+                    function beforeHideHandler(event) {
+                        // Display a status message in the SDK sample output region
+                        WinJS.log && WinJS.log("Game options settings flyout beforehide event raised.", "App settings SDK sample", "info");
+                    }
+
+                    function afterHideHandler(event) {
+                        // Display a status message in the SDK sample output region
+                        WinJS.log && WinJS.log("Game options settings flyout afterhide event raised.", "App settings SDK sample", "info");
+                    } 
+
+        </script>
+
+    </body>
+</html>

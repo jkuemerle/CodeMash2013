@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Search app extension sample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script type="text/javascript" src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+    <!-- SDK Base references -->
+    <link rel="stylesheet" type="text/css" href="css/base-sdk.css" />
+    <script type="text/javascript" src="base-sdk.js"></script>
+
+    <!-- Sample references -->
+    <link rel="stylesheet" type="text/css" href="css/program.css" />
+    <script type="text/javascript" src="program.js"></script>
+</head>
+<body role="application">
+    <div id="rootGrid">
+        <div id="header" role="contentinfo"></div>
+        <div id="content">
+            <h1 id="featureLabel">Search app extension sample</h1>
+
+            <h2 id="inputLabel">Input</h2>
+
+            <div id="input" role="main" aria-labelledby="inputLabel">
+                <div class="options">
+                    <h3 id="listLabel">Select scenario:</h3>
+                    <select size="7" id="scenarios" aria-labelledby="listLabel">
+                        <option selected="selected" value="1">1) Using the Search Extension</option>
+                        <option value="2">2) Suggestions from an app-defined list</option>
+                        <option value="3">3) Suggestions in East Asian languages </option>
+                        <option value="4">4) Suggestions provided by Windows</option>
+                        <option value="5">5) Suggestions from Open Search</option>
+                        <option value="6">6) Suggestions from a service returning XML</option>
+                    </select>
+                </div>
+                <div class="details" role="region" aria-labelledby="descLabel" aria-live="assertive">
+                    <h3 id="descLabel">Description:</h3>
+                    
+                    <!-- Scenario 1 Input -->
+                    <div class="item" id="scenario1Input">
+                        <p>Participating in the Search Extension lets users search with your app from anywhere in the system (including another app) by selecting your app in the Search charm.<br /><br />Follow these steps to see how users select an app (with this extension) to search from the Search charm:</p>
+                        <p>1. Open charms bar<br/>
+                           2. Select Search<br/>
+                           3. Type in a query<br/>
+                           4. Submit the query<br/>
+                           5. Select a different app in the search pane<br/>
+                           6. Submit a new query<br/>
+                           7. Switch back to Search Extension Sample app in the Search Pane</p>
+                        <br />
+                    </div>
+
+                    <!-- Scenario 2 Input -->
+                    <div class="item" id="scenario2Input">
+                        <p>Provide search suggestions from a local list provided by your application.<br /><br />Please follow these steps to try it out:</p>
+                        <p>1. Open charms bar<br/>
+                           2. Select Search<br/>
+                           3. Type in a query<br/>
+                           4. Search suggestions will be provided</p>
+                        <br />
+                    </div>
+
+                    <!-- Scenario 3 Input -->
+                    <div class="item" id="scenario3Input">
+                        <p>Use linguistic alternatives to query terms for East Asian search (primarily in China and Japan). The alternatives are matched against a static set of suggestions.<br />Note: A Japanese IME must be enabled for this scenario to function properly.<br /><br />Please follow these steps to try it out:</p>
+                        <p>1. Open charms bar<br/>
+                           2. Select Search<br/>
+                           3. Type in a query<br/>
+                           4. Search suggestions will be provided</p>
+                        <br />
+                    </div>
+
+                    <!-- Scenario 4 Input -->
+                    <div class="item" id="scenario4Input">
+                        <p>Use suggestions provided by Windows for content in Libraries or Folders. These suggestions are based on filenames and file metadata.<br />Note: Make sure there are music files in your Music Library.<br /><br />Please follow these steps to try it out:</p>
+                        <p>1. Open charms bar<br/>
+                           2. Select Search<br/>
+                           3. Type in a query<br/>
+                           4. Search suggestions will be provided</p>
+                    </div>
+
+                    <!-- Scenario 5 Input -->
+                    <div class="item" id="scenario5Input">
+                        <p>This example shows how to use Open Search suggestions in an app enrolled in the search extension.<br /><br />Please follow these steps to try it out:</p>
+                        <p>1. Open charms bar<br/>
+                           2. Select Search<br/>
+                           3. Type in a query<br/>
+                           4. Search suggestions will be provided</p>
+                        <br />
+                    </div>
+
+                    <!-- Scenario 6 Input -->
+                    <div class="item" id="scenario6Input">
+                        <p>This example shows how to use search suggestions that come from a server in XML format.<br /><br />Please follow these steps to try it out:</p>
+                        <p>1. Open charms bar<br/>
+                           2. Select Search<br/>
+                           3. Type in a query<br/>
+                           4. Search suggestions will be provided</p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="outputLabel"> Output</h2>
+
+            <div id="output" role="region" aria-labelledby="outputLabel" aria-live="assertive">
+                    <div id="statusMessage"></div>
+
+                    <!-- Scenario 1 Output -->
+                    <div class="item" id="scenario1Output">
+                    </div>
+
+                    <!-- Scenario 2 Output -->
+                    <div class="item" id="scenario2Output">
+                    </div>
+
+                    <!-- Scenario 3 Output -->
+                    <div class="item" id="scenario3Output">
+                    </div>
+
+                    <!-- Scenario 4 Output -->
+                    <div class="item" id="scenario4Output">
+                    </div>
+
+                    <!-- Scenario 5 Output -->
+                    <div class="item" id="scenario5Output">
+                    </div>
+
+                    <!-- Scenario 6 Output -->
+                    <div class="item" id="scenario6Output">
+                    </div>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo"></div>
+    </div>
+</body>
+</html>

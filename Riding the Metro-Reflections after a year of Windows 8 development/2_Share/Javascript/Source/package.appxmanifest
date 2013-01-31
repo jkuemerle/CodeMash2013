@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="Microsoft.SDKSamples.ShareSourceSample" Version="1.0.0.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  <Properties>
+    <DisplayName>Share Source Sample App</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Description>Share Source Sample</Description>
+    <Logo>images\storeLogo-sdk.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Applications>
+    <Application Id="Microsoft.SDKSamples.ShareSourceSample" StartPage="default.html">
+      <VisualElements DisplayName="Share Source Sample App" Logo="images\squareTile-sdk.png" SmallLogo="images\smallTile-sdk.png" Description="Share Source Sample App" ForegroundText="dark" BackgroundColor="#FFFFFF">
+        <DefaultTile ShowName="allLogos" ShortName="Share Source" />
+        <SplashScreen BackgroundColor="white" Image="images\splash-sdk.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="removableStorage" />
+    <Capability Name="picturesLibrary" />
+    <Capability Name="musicLibrary" />
+    <Capability Name="videosLibrary" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

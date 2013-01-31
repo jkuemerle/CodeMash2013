@@ -1,0 +1,30 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>Help settings flyout</title>
+    </head>
+    <body>
+        <!-- BEGINSETTINGFLYOUT -->
+        <!-- TODO: 2 - Define the WinJS.UI.SettingsFlyout for the setting in the Settings Pane. -->
+        <div id="helpDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="Help settings flyout" data-win-options="{width:'wide'}">
+           <div class="win-header" style="background-color:#dbf9ff">
+               <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+               <div class="win-label">Help</div>
+               <img src="../images/smallTile-sdk.png" style="position: absolute; right: 40px;"/>
+            </div>                
+            <div class="win-content">
+                <h3>Settings charm usage guidelines summary</h3>
+                <ul>
+                    <li>Settings should be instant commit.</li>
+                    <li>Allow users to dismiss the settings flyout by tapping outside of it, don’t use cancel or close buttons.</li>
+                    <li>Minimize the number of settings by only including settings that users really need.</li>
+                    <li>Only include settings that are about configuring the app and its behavior, don’t use the settings flyout for app commands, navigation or very frequently changed settings.</li>
+                    <li>The layout in this template reflects the recommended layout for settings flyouts.</li>
+                    <li>For more in-depth usage guidance, refer to the <a href="www.microsoft.com" target="fix_this_link">App settings UX guide</a>.</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- ENDSETTINGSFLYOUT -->
+    </body>
+</html>
