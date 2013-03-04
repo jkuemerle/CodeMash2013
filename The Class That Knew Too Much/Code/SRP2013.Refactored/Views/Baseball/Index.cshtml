@@ -1,0 +1,33 @@
+﻿@model SRPTalk.Models.SubmitFormViewModel
+
+@{
+    ViewBag.Title = "Baseball Ipsum";
+}
+
+@if (@Model.GeneratedParagraphs != null)
+{
+    <div>
+    @foreach (var paragraph in @Model.GeneratedParagraphs)
+    {
+        <p>@paragraph</p>
+    }
+    </div>
+}
+
+<fieldset>
+<p>I personally cannot get enough baseball.  Give this shameless knock-off of <a href="http://baconipsum.com">Bacon Ipsum</a> a try!</p>
+
+@using (Html.BeginForm("Index","Baseball", FormMethod.Post))
+{
+    @Html.ValidationSummary(false)
+    <p>
+        @Html.LabelFor(model => model.NumParagraphs)
+        @Html.TextBoxFor(model => model.NumParagraphs, new { maxlength = "2", size = "5" })
+    </p>
+    <p>
+        @Html.EditorFor(model => model.StartWithBaseballIpsum)
+        @Html.LabelFor(model => model.StartWithBaseballIpsum)
+    </p>
+    <input type="submit" value="Play ball!" />
+}
+</fieldset>

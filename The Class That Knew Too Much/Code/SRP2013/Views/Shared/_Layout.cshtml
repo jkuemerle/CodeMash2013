@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div id="title">
+                <h1>Single Responsibilty Principle</h1>
+            </div>
+            <div id="logindisplay">
+                &nbsp;
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>@Html.ActionLink("Price Check", "Index", "Price")</li>
+                    <li>@Html.ActionLink("Baseball Ipsum", "Index", "Baseball")</li>
+                    <li>@Html.ActionLink("Logging", "Index", "Logging")</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="main">
+            @RenderBody()
+        </section>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>

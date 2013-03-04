@@ -1,0 +1,40 @@
+﻿@model SRPTalk.Models.CarsHomePageModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Cars Home Page</h2>
+
+<h2>Makes</h2>
+<ul>
+@foreach (var make in @Model.Makes)
+{
+    <li>@make</li>
+}
+</ul>    
+
+<h2>Body Types</h2>
+<ul>
+@foreach (var bodyType in @Model.BodyTypes)
+{
+    <li>@bodyType</li>
+}
+</ul>    
+
+<h2>Dealerships</h2>
+<ul>
+@foreach (var dealership in @Model.Dealerships)
+{
+    <li>@dealership</li>
+}
+</ul>
+
+<h3>Log</h3>
+<textarea style="width: 90%;" rows="20">
+@foreach (var logEntry in @Model.Log)
+{
+    @logEntry
+
+}    
+</textarea>
