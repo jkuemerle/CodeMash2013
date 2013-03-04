@@ -1,0 +1,28 @@
+﻿@model SRPTalk.Models.PriceLookup
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Price Lookup</h2>
+
+<p>Enter an ISBN or a UPC to find a price.</p>
+
+@using (Html.BeginForm("Index","Price", FormMethod.Post))
+{
+    @Html.ValidationSummary(false)
+    <p>
+        @Html.LabelFor(model => model.Upc)
+        @Html.EditorFor(model => model.Upc)
+    </p>
+    <p>
+        @Html.LabelFor(model => model.Isbn)
+        @Html.EditorFor(model => model.Isbn)
+    </p>
+    <input type="submit" value="Check price" />
+}
+
+@if (@Model.Price.HasValue)
+{
+    <p><strong>Price:</strong> @Model.Price.Value</p>
+}
